@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>合脊 TF-1 最新产品决策</title>
+<style>
+  :root { --ink:#1a1a1a; --line:#d8d8d8; --ok:#0a7a4a; --bg:#f7f7f5; }
+  * { box-sizing: border-box; }
+  body { margin:0; font-family: "PingFang SC","Hiragino Sans GB","Noto Sans CJK SC",sans-serif;
+         color:var(--ink); background:linear-gradient(180deg,#eef2f0 0%, var(--bg) 180px); line-height:1.6; }
+  main { max-width:720px; margin:0 auto; padding:28px 20px 48px; }
+  h1 { font-size:1.45rem; margin:0 0 8px; letter-spacing:.02em; }
+  .sub { color:#555; font-size:.95rem; margin-bottom:20px; }
+  .tip { background:#fff8e6; border:1px solid #e5d7a3; padding:12px 14px; border-radius:8px; font-size:.9rem; margin-bottom:24px; }
+  h2 { font-size:1.05rem; margin:28px 0 10px; padding-bottom:6px; border-bottom:1px solid var(--line); }
+  table { width:100%; border-collapse:collapse; background:#fff; }
+  th,td { border:1px solid var(--line); padding:10px 12px; text-align:left; vertical-align:top; font-size:.92rem; }
+  th { background:#f0f0ee; width:22%; }
+  .ok { color:var(--ok); font-weight:600; }
+  ul { padding-left:1.2em; }
+  li { margin:6px 0; }
+  code { font-size:.78rem; background:#eee; padding:2px 6px; border-radius:4px; word-break:break-all; }
+  .path { font-size:.8rem; color:#444; }
+</style>
+</head>
+<body>
+<main>
+  <h1>合脊 TF-1 · 最新产品决策</h1>
+  <p class="sub">纯文字离线页 · 不依赖外链 · Safari / Chrome 均可打开</p>
+
+  <div class="tip">
+    <strong>不要打开</strong> <code>http://127.0.0.1:…</code>（会报 Error -102：那是云端机器内部地址）。<br/>
+    请在 Cursor 里直接打开本文件，或下载到桌面后用 Safari 双击；macOS 终端：<br/>
+    <code>open -a Safari ~/Downloads/tf1-decisions-open.html</code>
+  </div>
+
+  <h2>1. 已定（相对原概念稿）</h2>
+  <table>
+    <tr><th>项目</th><th>现在定什么</th></tr>
+    <tr>
+      <td>扶手</td>
+      <td><span class="ok">4D 纯机械手动</span>：升降 7 cm、前后 4 cm、宽度侧摆、旋转。
+      <strong>无电机、不自动</strong>。不做 7D。腰/拉伸用电控用臂侧按键。</td>
+    </tr>
+    <tr>
+      <td>上背</td>
+      <td><span class="ok">左右分块</span>；每块 <strong>3 自由度</strong>：↑50 mm、前后 AP 50 mm、节距 ±15°。
+      弹性+阻尼优先，不默认 6 个电机。</td>
+    </tr>
+    <tr>
+      <td>腰靠</td>
+      <td>传感追腰 + Stretch 复用 AP 行程；与 Track 互斥（不同时拉伸）。</td>
+    </tr>
+    <tr>
+      <td>头枕前后</td>
+      <td>行程仍标 TBD（源文乱码，不臆造毫米）。</td>
+    </tr>
+  </table>
+
+  <h2>2. 和旧稿差在哪</h2>
+  <ul>
+    <li>旧稿倾向高自由度 / 可能电动扶手 → <strong>改为 4D 纯机械扶手</strong>。</li>
+    <li>上背由整板思路 → <strong>左右两块，各 3DOF</strong>。</li>
+    <li>电机预算优先给腰靠 Track/Stretch，不给扶手。</li>
+  </ul>
+
+  <h2>3. 相关文件（同源目录）</h2>
+  <ul class="path">
+    <li>tf1-decisions-latest.md — 同内容 Markdown</li>
+    <li>tf1-design-review.md — 设计审查（已回写）</li>
+    <li>chair-product-concept.md — 产品概念稿</li>
+    <li>media/tf1-back-layers.png — 上背分块示意（Finder 空格预览）</li>
+  </ul>
+
+  <p style="margin-top:32px;font-size:.85rem;color:#666;">合脊 TF-1 · 概念决策摘要 · 非正式量产图纸</p>
+</main>
+</body>
+</html>

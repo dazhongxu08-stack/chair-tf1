@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>合脊 TF-1 机构简图预览</title>
+<style>
+  body { font-family: -apple-system, "PingFang SC", "Hiragino Sans GB", "Noto Sans CJK SC", sans-serif; margin: 24px; background: #fafafa; color: #111; }
+  h1 { font-size: 22px; }
+  h2 { font-size: 18px; margin-top: 36px; border-bottom: 1px solid #ddd; padding-bottom: 6px; }
+  .note { color: #555; font-size: 14px; }
+  .tip { background: #fff8e7; border: 1px solid #e6d9a8; padding: 14px 16px; border-radius: 8px; font-size: 14px; line-height: 1.6; }
+  code { background: #eee; padding: 1px 6px; border-radius: 4px; font-size: 12px; word-break: break-all; }
+  .fig { background: #fff; border: 1px solid #ddd; border-radius: 6px; padding: 8px; overflow-x: auto; }
+  svg { max-width: 100%; height: auto; display: block; }
+</style>
+</head>
+<body>
+<h1>合脊 TF-1 带尺寸机构简图（中文）</h1>
+<p class="note"><a href="tf1-structure-updated.html">→ 打开「修改后结构总图」专页</a>（扶手4D / 上背左右分块）</p>
+<div class="tip">
+<strong>macOS 打开方式</strong><br/>
+1. 在 Finder 中进入 Agent Store 的 <code>media</code> 文件夹<br/>
+2. 选中本文件 <code>tf1-mechanism-preview.html</code> → <strong>右键 → 打开方式 → Safari</strong>（推荐；系统苹方字体可正确显示中文）<br/>
+3. 或打开「终端」粘贴：<br/>
+<code>open -a Safari "$HOME/Library/Application Support/Cursor/AgentStores/cursor_agent_stores/bc-42a51c64-43dd-46eb-b684-f91ee822ddd8/files/media/tf1-mechanism-preview.html"</code><br/>
+4. 备用：同目录 <code>tf1-*.png</code> 选中后按空格键 Quick Look。
+</div>
+<p class="note">单位 mm · 示意非 CAD · 头枕前后行程 = TBD · 下图为矢量内嵌，Safari 用本机中文字体渲染</p>
+<section><h2>图1 侧视总成</h2><p class='note'>座高 450–550；腰–坐外缘距 ≈420、间隙 ≈30；倾仰枢轴 O</p><div class='fig'><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="660" viewBox="0 0 920 660">
+  <title>TF-1 side</title>
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#333"/>
+    </marker>
+    <style>
+      .frame { fill: none; stroke: #1a1a1a; stroke-width: 2.2; }
+      .module { fill: #f2f2f2; stroke: #1a1a1a; stroke-width: 1.6; }
+      .lumbar { fill: #e8eef5; stroke: #1a3a5c; stroke-width: 1.8; }
+      .upper { fill: #eef5e8; stroke: #2a4a2a; stroke-width: 1.6; }
+      .seat { fill: #f5f0e8; stroke: #5a4a2a; stroke-width: 1.8; }
+      .dim { stroke: #444; stroke-width: 1; fill: none; }
+      .dimt { font: 13px sans-serif; fill: #222; font-family: "PingFang SC", "Hiragino Sans GB", "Noto Sans CJK SC", "Noto Sans SC", sans-serif; }
+      .label { font: 14px sans-serif; fill: #111; font-family: "PingFang SC", "Hiragino Sans GB", "Noto Sans CJK SC", "Noto Sans SC", sans-serif; }
+      .note { font: 12px sans-serif; fill: #555; font-family: "PingFang SC", "Hiragino Sans GB", "Noto Sans CJK SC", "Noto Sans SC", sans-serif; }
+      .ground { stroke: #888; stroke-width: 1.5; }
+      .axis { stroke: #888; stroke-dasharray: 4 3; stroke-width: 1; }
+      .title { font: 600 17px sans-serif; fill: #111; font-family: "PingFang SC", "Hiragino Sans GB", "Noto Sans CJK SC", "Noto Sans SC", sans-serif; }
+    </style>
+  </defs>
+  <text class="title" x="40" y="32">图1  合脊 TF-1 侧视总成机构简图（单位 mm）</text>
+  <text class="note" x="40" y="52">示意比例，非 CAD 装配图 · 初始位 · 倾仰 90°</text>
+
+  <line class="ground" x1="40" y1="590" x2="700" y2="590"/>
+  <text class="note" x="40" y="610">地面</text>
+
+  <circle class="frame" cx="220" cy="570" r="20"/>
+  <circle class="frame" cx="380" cy="570" r="20"/>
+  <text class="dimt" x="175" y="555">脚轮 ≥Ø76（3英寸）</text>
+  <line class="frame" x1="220" y1="550" x2="380" y2="550"/>
+  <line class="frame" x1="300" y1="550" x2="300" y2="490"/>
+
+  <rect class="module" x="288" y="430" width="24" height="60"/>
+  <text class="label" x="320" y="462">气杆</text>
+
+  <line class="dim" x1="80" y1="590" x2="80" y2="410"/>
+  <line class="dim" x1="74" y1="590" x2="86" y2="590"/>
+  <line class="dim" x1="74" y1="410" x2="86" y2="410"/>
+  <text class="dimt" x="18" y="510" transform="rotate(-90 18 510)">座高 450–550</text>
+
+  <rect class="seat" x="160" y="410" width="280" height="28" rx="4"/>
+  <text class="label" x="265" y="430">坐垫</text>
+  <line class="dim" x1="160" y1="400" x2="200" y2="400" marker-end="url(#arrow)"/>
+  <text class="dimt" x="205" y="404">前后 40</text>
+  <path class="axis" d="M300 424 Q320 410 340 424"/>
+  <text class="dimt" x="345" y="418">微摆 ±6°</text>
+
+  <line class="dim" x1="440" y1="410" x2="440" y2="380"/>
+  <text class="dimt" x="448" y="400">间隙 ≈30</text>
+
+  <rect class="lumbar" x="430" y="290" width="36" height="90" rx="3"/>
+  <text class="label" x="478" y="325">腰靠</text>
+  <text class="dimt" x="478" y="345">480×240</text>
+  <text class="dimt" x="478" y="363">↑50 · AP50 · ±15°</text>
+  <line class="dim" x1="430" y1="280" x2="390" y2="280" marker-end="url(#arrow)"/>
+  <line class="dim" x1="430" y1="280" x2="466" y2="280"/>
+  <text class="dimt" x="395" y="272">AP 50</text>
+  <line class="dim" x1="488" y1="290" x2="488" y2="340"/>
+  <line class="dim" x1="482" y1="290" x2="494" y2="290"/>
+  <line class="dim" x1="482" y1="340" x2="494" y2="340"/>
+  <text class="dimt" x="500" y="320">↑50</text>
+
+  <rect class="upper" x="438" y="130" width="32" height="140" rx="3"/>
+  <text class="label" x="480" y="185">上背</text>
+  <text class="dimt" x="480" y="205">500×340</text>
+  <text class="dimt" x="480" y="223">↑50 · AP50 · ±15°</text>
+  <line class="dim" x1="438" y1="120" x2="400" y2="120" marker-end="url(#arrow)"/>
+  <text class="dimt" x="405" y="114">AP 50</text>
+
+  <rect class="frame" x="466" y="110" width="18" height="270" stroke-dasharray="6 4"/>
+  <text class="dimt" x="500" y="250">靠背框</text>
+  <text class="dimt" x="500" y="268">500×570 · ↑50</text>
+  <line class="dim" x1="640" y1="110" x2="640" y2="380"/>
+  <line class="dim" x1="634" y1="110" x2="646" y2="110"/>
+  <line class="dim" x1="634" y1="380" x2="646" y2="380"/>
+  <text class="dimt" x="652" y="250">框高 570</text>
+
+  <rect class="module" x="420" y="50" width="50" height="40" rx="4"/>
+  <text class="label" x="480" y="65">头枕 360×200</text>
+  <text class="dimt" x="480" y="83">↑80 · 外翻 45° · 内翻 90°</text>
+  <text class="dimt" x="480" y="101">前后行程 = TBD（源文乱码）</text>
+  <line class="dim" x1="445" y1="50" x2="445" y2="30"/>
+  <text class="dimt" x="400" y="40">↑80</text>
+
+  <line class="dim" x1="160" y1="450" x2="466" y2="450"/>
+  <line class="dim" x1="160" y1="444" x2="160" y2="456"/>
+  <line class="dim" x1="466" y1="444" x2="466" y2="456"/>
+  <text class="dimt" x="230" y="472">初始外缘距（腰靠↔坐垫）≈420</text>
+
+  <circle cx="456" cy="410" r="5" fill="#1a1a1a"/>
+  <text class="dimt" x="360" y="505">倾仰枢轴 O</text>
+  <text class="note" x="360" y="525">档位 90° / 100° / 130° / 160°</text>
+</svg>
+</div></section>
+<section><h2>图2 腰靠滑架</h2><p class='note'>升降 / AP 丝杠 / 节距 ±15°；Track 与 Stretch 复用 AP 推杆</p><div class='fig'><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="580" viewBox="0 0 900 580">
+  <title>TF-1 lumbar</title>
+  <defs>
+    <marker id="arr" markerWidth="7" markerHeight="7" refX="3.5" refY="3.5" orient="auto">
+      <path d="M0,0 L7,3.5 L0,7 Z" fill="#333"/>
+    </marker>
+    <style>
+      .f { fill: none; stroke: #1a1a1a; stroke-width: 2; }
+      .p { fill: #e8eef5; stroke: #1a3a5c; stroke-width: 1.8; }
+      .m { fill: #f0f0f0; stroke: #333; stroke-width: 1.4; }
+      .act { fill: #dde8dd; stroke: #2a5a2a; stroke-width: 1.5; }
+      .d { stroke: #444; stroke-width: 1; fill: none; }
+      .t { font: 13px sans-serif; fill: #222; font-family: "PingFang SC", "Hiragino Sans GB", "Noto Sans CJK SC", "Noto Sans SC", sans-serif; }
+      .h { font: 600 16px sans-serif; fill: #111; font-family: "PingFang SC", "Hiragino Sans GB", "Noto Sans CJK SC", "Noto Sans SC", sans-serif; }
+      .n { font: 12px sans-serif; fill: #555; font-family: "PingFang SC", "Hiragino Sans GB", "Noto Sans CJK SC", "Noto Sans SC", sans-serif; }
+    </style>
+  </defs>
+  <text class="h" x="24" y="30">图2  腰靠滑架机构简图（侧视剖切）</text>
+  <text class="n" x="24" y="52">单位 mm · 轨距 s≈120【假设】· 悬臂见标注</text>
+
+  <rect class="m" x="80" y="90" width="28" height="360"/>
+  <text class="t" x="55" y="80">靠背框挂板</text>
+  <text class="t" x="22" y="180" transform="rotate(-90 22 180)">框升降 ↑50</text>
+
+  <rect class="m" x="108" y="170" width="50" height="200"/>
+  <text class="t" x="115" y="260">升降</text>
+  <text class="t" x="115" y="278">滑座</text>
+
+  <rect class="act" x="118" y="110" width="30" height="55"/>
+  <text class="t" x="155" y="140">升降推杆 ≥100 N</text>
+  <line class="d" x1="170" y1="170" x2="170" y2="370"/>
+  <line class="d" x1="164" y1="170" x2="176" y2="170"/>
+  <line class="d" x1="164" y1="370" x2="176" y2="370"/>
+  <text class="t" x="182" y="275">行程 50</text>
+
+  <line class="f" x1="163" y1="190" x2="163" y2="350"/>
+  <text class="t" x="90" y="420">轨距 s≈120【假设】</text>
+
+  <rect class="m" x="168" y="220" width="90" height="100"/>
+  <text class="t" x="185" y="275">AP 滑台</text>
+
+  <rect class="act" x="175" y="195" width="120" height="22"/>
+  <text class="t" x="305" y="210">AP 丝杠推杆 · 行程 50 · 额定 ≥300 N</text>
+
+  <circle cx="270" cy="270" r="6" fill="#1a1a1a"/>
+  <text class="t" x="248" y="302">节距铰 P</text>
+  <text class="t" x="255" y="320">±15°</text>
+
+  <rect class="p" x="276" y="210" width="24" height="120"/>
+  <rect class="p" x="300" y="205" width="40" height="130" rx="6"/>
+  <text class="t" x="355" y="260">软垫 + 传感</text>
+  <text class="t" x="355" y="280">硬背板 480×240</text>
+
+  <line class="d" x1="365" y1="205" x2="365" y2="335"/>
+  <line class="d" x1="359" y1="205" x2="371" y2="205"/>
+  <line class="d" x1="359" y1="335" x2="371" y2="335"/>
+  <text class="t" x="378" y="275">240</text>
+
+  <line class="d" x1="340" y1="270" x2="420" y2="270" marker-end="url(#arr)"/>
+  <text class="t" x="400" y="258">Fc</text>
+  <text class="n" x="385" y="295">Track 40/80/120 N</text>
+  <text class="n" x="385" y="313">Stretch 力帽 180 N【假设】</text>
+
+  <line class="d" x1="270" y1="270" x2="270" y2="240"/>
+  <text class="t" x="220" y="230">e≈30【假设】</text>
+  <line class="d" x1="163" y1="380" x2="310" y2="380"/>
+  <text class="t" x="185" y="400">悬臂 Lc≈80（AP 全伸）【假设】</text>
+
+  <path class="f" d="M300 205 L330 180" stroke-dasharray="4 3"/>
+  <path class="f" d="M300 335 L330 360" stroke-dasharray="4 3"/>
+  <text class="t" x="335" y="185">+15°</text>
+  <text class="t" x="335" y="365">−15°</text>
+
+  <text class="n" x="530" y="130">零件要点</text>
+  <text class="n" x="530" y="155">1 框挂板 / 竖向导轨</text>
+  <text class="n" x="530" y="178">2 升降滑座 + 自锁推杆</text>
+  <text class="n" x="530" y="201">3 双直线导轨（抗偏载）</text>
+  <text class="n" x="530" y="224">4 AP 梯形丝杠模组</text>
+  <text class="n" x="530" y="247">5 节距铰 + 硬限位 ±15°</text>
+  <text class="n" x="530" y="270">6 硬背板 + 压力条带 2–4 区</text>
+  <text class="n" x="530" y="293">7 软垫（不承担主推力）</text>
+  <text class="n" x="530" y="330">控制：Track 与 Stretch 互斥</text>
+  <text class="n" x="530" y="353">倾仰 &gt;130° 降增益；160° 持位</text>
+</svg>
+</div></section>
+<section><h2>图3 倾仰档位</h2><p class='note'>90°/100° 保持 Track；130° 降增益；160° 持位且禁止 Stretch</p><div class='fig'><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="540" viewBox="0 0 860 540">
+  <title>TF-1 recline</title>
+  <style>
+    .f { fill: none; stroke: #1a1a1a; stroke-width: 2; }
+    .seat { fill: #f5f0e8; stroke: #5a4a2a; stroke-width: 1.5; }
+    .back { fill: none; stroke: #1a3a5c; stroke-width: 2; }
+    .dash { fill: none; stroke: #888; stroke-width: 1.4; stroke-dasharray: 5 4; }
+    .t { font: 13px sans-serif; fill: #222; font-family: "PingFang SC", "Hiragino Sans GB", "Noto Sans CJK SC", "Noto Sans SC", sans-serif; }
+    .h { font: 600 16px sans-serif; fill: #111; font-family: "PingFang SC", "Hiragino Sans GB", "Noto Sans CJK SC", "Noto Sans SC", sans-serif; }
+    .n { font: 12px sans-serif; fill: #555; font-family: "PingFang SC", "Hiragino Sans GB", "Noto Sans CJK SC", "Noto Sans SC", sans-serif; }
+  </style>
+  <text class="h" x="24" y="30">图3  倾仰档位与上背 / 腰–坐包络</text>
+  <text class="n" x="24" y="52">角定义：座面水平时，靠背与座面夹角（上传档位）</text>
+
+  <circle cx="280" cy="330" r="6" fill="#111"/>
+  <text class="t" x="245" y="362">O 倾仰枢轴</text>
+  <rect class="seat" x="120" y="318" width="160" height="22" rx="3"/>
+  <text class="t" x="170" y="310">坐垫</text>
+
+  <line class="back" x1="280" y1="330" x2="280" y2="110"/>
+  <text class="t" x="288" y="150">90°</text>
+  <line class="dash" x1="280" y1="330" x2="318" y2="115"/>
+  <text class="t" x="325" y="140">100°</text>
+  <line class="dash" x1="280" y1="330" x2="420" y2="170"/>
+  <text class="t" x="430" y="180">130°</text>
+  <text class="n" x="430" y="198">Track 降增益</text>
+  <line class="back" x1="280" y1="330" x2="500" y2="260" stroke="#8a3030"/>
+  <text class="t" x="510" y="265" fill="#8a3030">160°</text>
+  <text class="n" x="510" y="285">Track 持位 · 禁止 Stretch</text>
+  <path class="f" d="M280 170 A160 160 0 0 1 450 290" stroke-dasharray="3 3" opacity="0.5"/>
+
+  <rect x="40" y="400" width="360" height="115" rx="6" fill="#f7f7f7" stroke="#ccc"/>
+  <text class="t" x="55" y="425">上背模块包络（相对靠背框）</text>
+  <text class="n" x="55" y="448">外形 500 × 340</text>
+  <text class="n" x="55" y="468">升降 50 · 前后 AP 50 · 节距 ±15°</text>
+  <text class="n" x="55" y="488">MVP：弹性扭杆 + 阻尼 + 硬限位</text>
+  <text class="n" x="55" y="508">Pro：小电机追背；Stretch 时锁定</text>
+
+  <rect x="420" y="400" width="400" height="115" rx="6" fill="#f0f4f8" stroke="#ccc"/>
+  <text class="t" x="435" y="425">腰靠相对坐垫几何（初始）</text>
+  <text class="n" x="435" y="448">外缘距 ≈ 420（腰靠最外 ↔ 坐垫最外）</text>
+  <text class="n" x="435" y="468">坐垫–腰靠间隙 ≈ 30</text>
+  <text class="n" x="435" y="488">坐垫前后滑 40；微摆 ±6°</text>
+  <text class="n" x="435" y="508">座高（座面离地）450–550</text>
+</svg>
+</div></section>
+<section><h2>图4 背系正视（修改后：左右分块）</h2><p class='note'>上背左/右各 3DOF · 腰靠分轨 · 扶手 4D 纯机械</p><div class='fig'><svg xmlns="http://www.w3.org/2000/svg" width="920" height="520" viewBox="0 0 920 520">
+  <title>TF-1 back dual</title>
+  <defs>
+    <style type="text/css">
+      @font-face{font-family:"Noto Sans CJK SC";src:url("file:///usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc");}
+      .frame { fill: none; stroke: #333; stroke-width: 2.5; }
+      .upper { fill: #eef5e8; stroke: #2a4a2a; stroke-width: 1.6; }
+      .lumb { fill: #e8eef5; stroke: #1a3a5c; stroke-width: 1.8; }
+      .t { font: 13px "PingFang SC","Hiragino Sans GB","Noto Sans CJK SC",sans-serif; fill: #222; }
+      .h { font: 600 16px "PingFang SC","Hiragino Sans GB","Noto Sans CJK SC",sans-serif; fill: #111; }
+      .n { font: 12px "PingFang SC","Hiragino Sans GB","Noto Sans CJK SC",sans-serif; fill: #555; }
+      .d { stroke: #444; stroke-width: 1; fill: none; }
+    </style>
+  </defs>
+  <text class="h" x="24" y="30">图4  背系正视 — 上背左右分块（每块 3DOF）</text>
+  <text class="n" x="24" y="52">外包络 500×340 · 每块 ↑50 / AP50 / ±15° · 扶手 4D 纯机械</text>
+
+  <rect class="frame" x="180" y="80" width="250" height="285"/>
+  <text class="t" x="450" y="100">靠背框 500×570 · ↑50</text>
+
+  <rect class="upper" x="188" y="90" width="112" height="160" rx="4"/>
+  <rect class="upper" x="310" y="90" width="112" height="160" rx="4"/>
+  <text class="t" x="205" y="155">上背左</text>
+  <text class="n" x="200" y="175">3DOF</text>
+  <text class="n" x="195" y="193">↑50 AP50 ±15°</text>
+  <text class="t" x="328" y="155">上背右</text>
+  <text class="n" x="323" y="175">3DOF</text>
+  <text class="n" x="318" y="193">↑50 AP50 ±15°</text>
+  <text class="n" x="285" y="130">中缝</text>
+
+  <line class="d" x1="180" y1="380" x2="430" y2="380"/>
+  <text class="t" x="290" y="400">500</text>
+
+  <rect class="lumb" x="190" y="270" width="230" height="85" rx="4"/>
+  <text class="t" x="245" y="308">腰靠滑架 480×240</text>
+  <text class="n" x="210" y="328">独立 ↑50 / AP50 / ±15° · 传感</text>
+
+  <text class="n" x="180" y="440">解耦：左右上背独立 3DOF 包络（弹性优先）；腰靠分轨；Stretch 时锁左右上背。</text>
+  <text class="n" x="180" y="462">扶手：4D 纯机械手动（升降/前后/宽度侧摆/旋转）— 无电机、不自动。</text>
+</svg>
+</div></section>
+</body>
+</html>
